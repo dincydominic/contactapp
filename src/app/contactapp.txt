@@ -1,0 +1,43 @@
+contact management app
+--------------------
+1.craete angular project:ng new filename
+2.clean the code
+3.run project:ng s
+4.link:bootstrap,fontawsome,font
+5.create component:ng g c  component-name
+   -header
+   -footer
+   -all contact
+   -add contact
+   -view contact
+   -edit contact
+   -page not found
+6.delete all spec.ts file from each userdefined componenets
+7.set up path for each components-app module.ts
+    -all contact:http://localhost:4200/
+   -addcontact:http://localhost:420//add-contact
+   -view contact:http://localhost:4200/view-contact/id
+   -edit contact:http://localhost:4200/edit-contact/id
+   -page-not-found:any path other seraching
+8.to navigate according to component use router-outlet selector
+in Appcomponent html
+9.design components
+10.create service to share common logic(api call)between component:ng g s service-folde/service-name
+     -dependecy injuction'httpclient'classin service class constructor
+
+                 angular topic
+                 -------------
+11.ASYNCHRONOUS FUNCTION HANDLING IN angular
+    - using RxJS Library(Reactive Extensions Library for JavaScript)
+    -using observable to resolve asynchronous function
+      -resolve state:subscribe(observer:call back)
+          -observer can ve next:required,wher we get 200 response code
+          -error handling using keyword next
+      -reject state:catcherror(callback)
+        -error():to get error response when you subscribe it
+12.API CALL USING angular:HttpClient class-have all http methods
+   - Import HttpClientModule in Appmodule.ts
+   -dependecy injuction'httpclient'classin service class constructor
+13:ActivateRoute:Provides access to information about a route associated with a component that is loaded in an outlet. 
+15:pipes:se pipes to transform strings, currency amounts, dates, and other data for display.
+syntax:{{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }}
